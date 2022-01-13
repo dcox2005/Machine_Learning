@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c250896d-1532-4a57-9657-fb8de37904e2" name="Changes" comment="Creating New Repository Machine Learning" />
+    <list default="true" id="c250896d-1532-4a57-9657-fb8de37904e2" name="Changes" comment="Creating New Repository Machine Learning">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+        <entry key="$PROJECT_DIR$" value="master" />
         <entry key="$PROJECT_DIR$/TrialPython" value="TrialPython" />
       </map>
     </option>
@@ -74,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642097875872</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Creating New Repository Machine Learning">
+      <created>1642098557662</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642098557662</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,7 +111,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="TrialPython" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -99,12 +122,38 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Machine_Learning/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Machine_Learning/TrialPython" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="trial update" />
     <MESSAGE value="Creating branch Project01" />
     <MESSAGE value="Adding LS files" />
     <MESSAGE value="Creating New Projects Machine Learning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating New Projects Machine Learning" />
+    <MESSAGE value="Creating New Repository Machine Learning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating New Repository Machine Learning" />
   </component>
 </project>
