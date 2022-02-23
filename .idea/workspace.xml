@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c250896d-1532-4a57-9657-fb8de37904e2" name="Changes" comment="Creating New Repository Machine Learning">
+    <list default="true" id="c250896d-1532-4a57-9657-fb8de37904e2" name="Changes" comment="Branch TrialPython">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Google Drive/CSCD496/Projects" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -97,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642098557662</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Branch TrialPython">
+      <created>1642100545754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642100545754</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,15 +113,9 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
+                  <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
             </State>
@@ -134,12 +135,17 @@
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="Machine_Learning/master" />
+                  <option value="TrialPython" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="Machine_Learning/TrialPython" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Machine_Learning/master" />
                 </option>
               </RecentGroup>
             </list>
@@ -154,6 +160,7 @@
     <MESSAGE value="Adding LS files" />
     <MESSAGE value="Creating New Projects Machine Learning" />
     <MESSAGE value="Creating New Repository Machine Learning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating New Repository Machine Learning" />
+    <MESSAGE value="Branch TrialPython" />
+    <option name="LAST_COMMIT_MESSAGE" value="Branch TrialPython" />
   </component>
 </project>
