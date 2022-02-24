@@ -93,19 +93,23 @@ class LogisticRegression:
             
     def SGD(self, X, y, eta, iterations, lam, mini_batch_size):
         
-        shuffler = np.random.permutation(len(y))
+        # shuffler = np.random.permutation(len(y))
         # shuffledX = X[shuffler]
         # shuffledY = y[shuffler]
         shuffledX = X
         shuffledY = y
         n = len(y)
-        nPrime = mini_batch_size
-        step = eta / nPrime
-        blockCount = math.ceil(n / nPrime)
+        # nPrime = mini_batch_size
+        # step = eta / nPrime
+        blockCount = math.ceil(n / mini_batch_size)
         
         for i in range(0, iterations):
-            start = (i % blockCount) * nPrime
-            end = start + nPrime
+            
+            start = (i % blockCount) * mini_batch_size
+            end = min(start + mini_batch_size, n)
+            nPrime = end - start
+            step = eta / nPrime
+            
             yPrime = shuffledY[start: end, :]
             XPrime = shuffledX[start: end, :]
             # startingIndex = np.random.randint(0, n - mini_batch_size + 1)
