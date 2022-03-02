@@ -1,4 +1,4 @@
-# Implementation of the forwardfeed neural network using stachastic gradient descent via backpropagation.
+# Implementation of the forwardfeed neural network using stochastic gradient descent via back-propagation.
 
 You will do the coding in these files: `math_util.py` and `nn.py`. 
 
@@ -24,4 +24,12 @@ Finish the following function in the `MyMath` class: `tanh`, `logis`, `iden`, an
 Finish the following function in the `NeuralNetwork` class: `add_layer`, `_init_weights`.
 
 
+
+## sub-project 2
+
+Finish the following function in the `NeuralNetwork` class: `predict`, and `error`.
+
+The majority of the code for the `predict` and `error` functions is to implement a procedure called `forward feed`, which will also be used in the NN's training that you will implement later. So I suggest you cut out the `forward feed` code separately for reuse purpose.
+
+After you finish sub-projects 1&2, if you comment out the training part in the notebook, your NN is ready to make prediction for new samples, which of course will be of no quality because we haven't trained the network yet. 
 
