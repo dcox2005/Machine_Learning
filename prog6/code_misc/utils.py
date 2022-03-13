@@ -62,6 +62,41 @@ class MyUtils:
         '''
         
         # Add your own code here. This function is not needed in NN implementation though. 
-        pass
-    
+        if degree == 1:
+            return X
+        
+        n, features = X.shape
+        bucketSize = [0] * (degree)
+        
+        for i in range(degree):
+            bucketSize[i] = math.comb(i + features, features - 1)
+        
+        dPrime = np.sum(bucketSize)
+        columnHeadValues = [0] * (dPrime)
+        
+        for i in range(features):
+            columnHeadValues[i] = i
+        
+        previousBucketEnd = 0
+        currentBucketSize = features
+        currentWorkingColumn = currentBucketSize
+        Z = np.zeros((n, dPrime))
+        Z[:n, :features] = X
+        
+        for i in range(1, degree):
+            for j in range(previousBucketEnd, previousBucketEnd + currentBucketSize):
+                headValue = columnHeadValues[j]
+                for k in range(headValue, features):
+                    temp = (Z[:, j] * X[:, k]).reshape(-1, 1)
+                    Z[:n, currentWorkingColumn:currentWorkingColumn + 1] = temp
+                    columnHeadValues[currentWorkingColumn] = k
+                    currentWorkingColumn = currentWorkingColumn + 1
+  
+                    
+                
+            previousBucketEnd = previousBucketEnd + currentBucketSize
+            currentBucketSize = bucketSize[i]
+
+            
         return Z
+

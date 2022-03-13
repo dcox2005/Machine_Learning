@@ -21,7 +21,9 @@ class MyMath:
             x: an array type of real numbers
             return: the numpy array where every element is tanh of the corresponding element in array x
         '''
-        pass
+        vtanh = np.vectorize(np.tanh)
+        var = vtanh(x)
+        return var
 
     
     def tanh_de(x):
@@ -31,8 +33,7 @@ class MyMath:
             x: an array type of real numbers
             return: the numpy array where every element is tanh derivative of the corresponding element in array x
         '''
-        pass
-
+        return (1 - pow(MyMath.tanh(x), 2))
     
     def logis(x):
         ''' Logistic function. 
@@ -42,7 +43,10 @@ class MyMath:
             return: the numpy array where every element is logistic of 
                     the corresponding element in array x
         '''
-        pass
+        sig = lambda a : (1 / (1 + np.exp(-a)))
+        vFunc = np.vectorize(sig)
+        var = vFunc(x)
+        return var
 
     
     def logis_de(x):
@@ -53,7 +57,8 @@ class MyMath:
             return: the numpy array where every element is logistic derivative of 
                     the corresponding element in array x
         '''
-        pass
+        gx = MyMath.logis(x)
+        return ((1 - gx) * gx)
 
     
     def iden(x):
@@ -64,7 +69,9 @@ class MyMath:
             return: the numpy array where every element is the same as
                     the corresponding element in array x
         '''
-        pass
+        vFunc = np.vectorize(np.copy)
+        var = vFunc(x)
+        return var
 
     
     def iden_de(x):
@@ -72,9 +79,9 @@ class MyMath:
             Support vectorized operation
 
             x: an array type of real numbers
-            return: the numpy array of all zeros of the same shape of x.
+            return: the numpy array of all ones of the same shape of x.
         '''
-        pass
+        return np.ones(np.shape(x))
         
 
     def relu(x):
@@ -84,7 +91,10 @@ class MyMath:
             x: an array type of real numbers
             return: the numpy array where every element is the max of: zero vs. the corresponding element in x.
         '''
-        pass
+        relu = lambda a : (a if a > 0 else 0)
+        vFunc = np.vectorize(relu)
+        var = vFunc(x)
+        return var
 
     
     def _relu_de_scaler(x):
@@ -93,7 +103,8 @@ class MyMath:
             x: a real number
             return: 1, if x > 0; 0, otherwise.
         '''
-        pass
+        relu = lambda a : (1 if a > 0 else 0)
+        return relu(x)
 
     
     def relu_de(x):
@@ -103,6 +114,8 @@ class MyMath:
             x: an array type of real numbers
             return: the numpy array where every element is the _relu_de_scaler of the corresponding element in x.   
         '''
-        pass
-
+           
+        vFunc = np.vectorize(MyMath._relu_de_scaler)
+        var = vFunc(x)
+        return var
     

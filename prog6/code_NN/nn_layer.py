@@ -3,8 +3,14 @@
 
 # Implementation of one layer used in the forward feeding and back propagation neural network 
 
+
+
+# import numpy as np
+# import math_util as mu
+
+
 import numpy as np
-import math_util as mu
+import code_NN.math_util as mu
 
 class NeuralLayer:
     def __init__(self, d = 1, act = 'tanh'):
@@ -29,3 +35,4 @@ class NeuralLayer:
         self.Delta = None   # N' x d^{(\ell)} matrix. Each row is vector of delta = \partial E / \partial S, where E is the error. Not useful for the input layer
         self.G = None       # (d^{(\ell-1)}+1 ) x d^{(\ell)} matrix. The gradient of E over W.
         self.W = None       # (d^{(\ell-1)}+1 ) x d^{(\ell)} matrix. The weights of the edges coming into layer \ell.
+                            # ell represents current layers index
